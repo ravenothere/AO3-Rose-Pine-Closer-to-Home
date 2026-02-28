@@ -217,7 +217,7 @@ col.name {
 #tos_prompt .heading {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     align-content: center;
     column-gap: 1.25em;
     position: unset;
@@ -273,11 +273,6 @@ col.name {
     -webkit-background-clip: text;
     background-image: var(--txt-header-hgl-h1);
     color: transparent;
-}
-
-/* hide default "Archive of Our Own beta" text and logo */
-#header .heading a * {
-    display: none;
 }
 
 /*>========== HEADER DROPDOWN MENUS ==========<*/
@@ -2082,72 +2077,6 @@ li.picture.blurb,
     /* required for bookmarks */
     padding: 0;
     /* required for own mystery blurbs */
-}
-
-/*>========== BLURB HEADER LAYOUT ==========<*/
-
-.blurb .header:has(ul.required-tags) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-}
-
-.blurb .header .heading {
-    margin: 0;
-}
-
-/* work title and author */
-.blurb .header h4.heading {
-    order: 1;
-    flex: 1;
-    box-sizing: border-box;
-    padding-right: 11ch;
-    font-size: 1.1em;
-    text-align: left;
-}
-
-/* reposition fandom tags below title */
-.blurb h5.fandoms.heading {
-    order: 4;
-    margin-top: 0.5em;
-}
-
-/* hide empty space on prompts without fandoms */
-.blurb h5.fandoms.heading:not(:has(a.tag)) {
-    height: 0;
-}
-
-/* reposition content rating icons */
-.blurb .header ul.required-tags {
-    order: 3;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 4px;
-    position: unset;
-    width: 100%;
-    margin-top: 0.429em;
-    padding-top: 0.643em;
-    border-top: var(--border-width) solid var(--border2);
-}
-
-/* reset positioning for content icons */
-.blurb ul.required-tags,
-.blurb ul.required-tags li,
-.blurb ul.required-tags li+li+li,
-.blurb ul.required-tags li+li+li+li,
-.blurb ul.required-tags li a {
-    position: unset;
-    width: unset;
-    height: unset;
-    margin: 0;
-    padding: 0;
-}
-
-.blurb .header p.notice {
-    order: 6;
-    width: 100%;
-    margin: 0.5em 0 0 0;
 }
 
 /*>========== MODIFICATION: PICTURE ==========<*/
