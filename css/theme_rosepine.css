@@ -24,7 +24,7 @@ GLOBAL VARIABLES
   --radius-tag:          0 15px 15px;         /* tags */
 
   /* ICON BORDER-RADIUS */
-  --icon-content-radius: 0.75rem;             /* content and bookmark icon */
+  --icon-content-radius: 0.25rem;             /* content and bookmark icon */
   --icon-primary-radius: 50%;                 /* primary and comment icon */
   --icon-index-radius:   0.75rem;             /* index icon */
 
@@ -65,8 +65,8 @@ GLOBAL VARIABLES
 /*>========== MAIN TEXT ==========<*/
 
   /* TEXT SIZE */
-  --txt-size-main:       100%;                /* main text size (bigger than 130% causes some issues, but is still mostly functional) */
-  --txt-size-work:       110%;                /* work text size */
+  --txt-size-main:       110%;                /* main text size (bigger than 130% causes some issues, but is still mostly functional) */
+  --txt-size-work:       115%;                /* work text size */
 
   /* TEXT COLORS */
   --txt-header:          #e0def4;             /* header text */
@@ -114,32 +114,32 @@ GLOBAL VARIABLES
 
 /*>========== ICON COLORS ==========<*/
 
-  /* CONTENT SYMBOL ICONS */
-  --icon-content-complete:    #3e8fb0;
-  --icon-content-incomplete:  #9ccfd8;
+    /* CONTENT SYMBOL ICONS */
+  --icon-content-complete:    #badf95;
+  --icon-content-incomplete:  #f995a6;
   --icon-content-public:      #3e8fb0;
   --icon-content-private:     #eb6f92;
   --icon-content-hidden:      #908caa;
-  --icon-content-rec:         #ebbcba;
+  --icon-content-rec:         #f6c177;
 
   /* RATING ICONS */
-  --icon-rating-gen:          #9ccfd8;
-  --icon-rating-teen:         #3e8fb0;
-  --icon-rating-mature:       #ebbcba;
-  --icon-rating-explicit:     #eb6f92;
+  --icon-rating-gen:          #badf95;
+  --icon-rating-teen:         #ffd07b;
+  --icon-rating-mature:       #f2b487;
+  --icon-rating-explicit:     #f995a6;
 
   /* RELATIONSHIP / PAIRING / ORIENTATION ICONS */
-  --icon-relationship-mm:     #eb6f92;
-  --icon-relationship-mf:     #3e8fb0;
-  --icon-relationship-gen:    #9ccfd8;
-  --icon-relationship-ff:     #ebbcba;
-  --icon-multi:               conic-gradient(from 360deg, #eb6f92 0% 25%, #9ccfd8 25% 50%, #ebbcba 50% 75%, #3e8fb0 75% 100%);
-  --icon-relationship-other:  linear-gradient(to left top, #3e8fb0, #9ccfd8, #eb6f92, #ebbcba);
+  --icon-relationship-mm:     #9bc9f6;
+  --icon-relationship-mf:     #c27bc2;
+  --icon-relationship-gen:    #badf95;
+  --icon-relationship-ff:     #fa9eae;
+  --icon-multi:               conic-gradient(from 360deg, #c27bc2 0% 25%, #9bc9f6 25% 50%, #badf95 50% 75%, #fa9eae 75% 100%);
+  --icon-relationship-other:  linear-gradient(to left top, #c27bc2, #9bc9f6, #badf95, #fa9eae);
 
   /* CONTENT WARNING ICONS */
-  --icon-warning-choose-not:  #9ccfd8;
-  --icon-warning-yes:         #eb6f92;
-  --icon-content-external:    #ebbcba;
+  --icon-warning-choose-not:  #f2b487;
+  --icon-warning-yes:         #fa9cac;
+  --icon-content-external:    #9dcaf8;
 
   /* OTHER ICONS */
   --icon-bg:                  var(--int-bg);  /* background for empty icon box or uploaded icon with transparent background */
@@ -155,10 +155,10 @@ GLOBAL VARIABLES
 
   /* BACKGROUND */
   --tag-default-bg:      #302d47;
-  --tag-fandom-bg:       #eb6f92;
-  --tag-warning-bg:      #ebbcba;
-  --tag-ship-bg:         #9ccfd8;
-  --tag-character-bg:    #3e8fb0;
+  --tag-fandom-bg:       #9fad97;
+  --tag-warning-bg:      #dca65f;
+  --tag-ship-bg:         #d36588;
+  --tag-character-bg:    #73a7c0;
   --tag-freeform-bg:     var(--tag-default-bg);
   --tag-splash-bg:       var(--bg5);    /* leave alone - only for tags on the splash page */
 
@@ -207,96 +207,4 @@ GLOBAL VARIABLES
   --stat-chart:          invert(96%) saturate(20%) hue-rotate(75deg) brightness(115%);
   --rich-txt-editor:     none;
 
-}
-
-/*>========== FONTS ==========<*/
-
-/* MAIN FONT FAMILY */
-body,
-input,
-.toggled form,
-.dynamic form,
-.secondary,
-.dropdown,
-blockquote,
-.prompt .blurb h6,
-.bookmark .user .meta,
-a.work,
-span.symbol,
-.heading .actions,
-.heading .action,
-.heading span.actions,
-button,
-span.unread,
-.replied,
-span.claimed,
-.actions span.defaulted,
-.splash .news .meta,
-.datetime,
-h5.fandoms.heading a.tag,
-dd.fandom.tags a,
-select {
-    font-family: Figtree, Bitter, Helvetica, "Trebuchet MS", "Lucida Sans", Arial, sans-serif, "GNU Unifont";
-}
-
-/* HEADINGS FONT FAMILY */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.heading {
-    font-family: Figtree, Bitter, Helvetica, "Trebuchet MS", "Lucida Sans", Arial, sans-serif, "GNU Unifont";
-    font-weight: var(--txt-bold);
-}
-
-/* CODE FONT FAMILY */
-kbd,
-tt,
-code,
-var,
-pre,
-samp,
-textarea,
-textarea#skin_css,
-.css.module blockquote pre,
-#floaty-textarea {
-    font-family: Victor Mono Medium, Consolas, Monaco, Courier, monospace;
-    font-size: 0.9em;
-    /* font-style: italic; */
-    /* for cursive version of Victor Mono */
-}
-
-/*>========== TEXT DECORATIONS ==========<*/
- /* don't forget to change the decoration in the mobile skin as well */
-
-/* TITLE DECORATIONS */
-#header .heading a::before {
-  content: "Archive of Our Own\00a0✿";
-}
-
-/* DASHBOARD CURRENT TAB DECORATION */
-#dashboard .current:after {
-  content: "\00a0✿";
-}
-
-.home .header h2::after {
-    content: "\00a0✿";
-}
-
-.splash>.module h3::after {
-  content: "\00a0✿";
-}
-
-/* TAG DECORATIONS */
-a.tag:not(.fandom.index.group a.tag,
-  h2.heading a.tag,
-  .splash .favorite a.tag,
-  h5.fandoms.heading a.tag,
-  dd.fandom.tags a,
-  [class^=warning] a.tag,
-  [class^=relationship] a,
-  [class^=character] a.tag):after {
-  content: "\00a0\00a0✿";
 }
