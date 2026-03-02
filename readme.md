@@ -133,7 +133,7 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 1. Create a second theme skin (e.g. [Dawn](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css) for light, [Moon]((https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinemoon.css)) for dark)
 2. On your dark theme skin, go to **Advanced → Choose @media** → select `(prefers-color-scheme: dark)`
 3. On your light theme skin, select `(prefers-color-scheme: light)`
-4. Add both in the parent chain at Step 5 — they'll switch automatically based on your system settings
+4. Add both in the parent chain at Step 6 — they'll switch automatically based on your system settings
 
 </details>
 
@@ -143,7 +143,7 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 Before chaining the skins, install these three from [AO3 Tweaks](https://github.com/ravenothere/AO3-Tweaks):
 
 **[AO3 Logo in header](https://github.com/ravenothere/AO3-Tweaks/tree/main#ao3-logo-in-header)**
-1. Create a skin named `[XYZ] Rosé Pine - Logo`
+1. Create a skin named `[XYZ] Rosé Pine CTH - Logo`
 2. Paste the [CSS](https://github.com/ravenothere/AO3-Tweaks/blob/main/add-ons/CSS/only-logo-in-header-Colored.css) from the add-on
 3. Set to **Parent Only** and submit
 
@@ -152,7 +152,7 @@ Before chaining the skins, install these three from [AO3 Tweaks](https://github.
 - This one doesn't go in the AO3 parent chain, Stylus handles it separately
 
 **[Custom Fonts](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#custom-fonts---by-wolfbatcat)**
-1. Create a skin named `[XYZ] Rosé Pine - Fonts`
+1. Create a skin named `[XYZ] Rosé Pine CTH - Fonts`
 2. Paste the CSS from the add-on
 3. Set to **Parent Only** and submit
 
@@ -162,7 +162,7 @@ Before chaining the skins, install these three from [AO3 Tweaks](https://github.
 <details>
 <summary><b>Step 4 — Create the tablet skin</b></summary>
 
-1. Create a skin named `[XYZ] Rosé Pine - Tablet`
+1. Create a skin named `[XYZ] Rosé Pine CTH - Tablet`
 2. Paste the contents of your chosen tablet file:
    - Normal layout → [`css/tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet.css)
    - Card layout → [`css/tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet_alt.css)
@@ -174,7 +174,7 @@ Before chaining the skins, install these three from [AO3 Tweaks](https://github.
 <details>
 <summary><b>Step 5 — Create the mobile skin</b></summary>
 
-1. Create a skin named `[XYZ] Rosé Pine - Mobile`
+1. Create a skin named `[XYZ] Rosé Pine CTH - Mobile`
 2. Paste the contents of your chosen mobile file:
    - Normal layout → [`css/mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile.css)
    - Card layout → [`css/mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile_alt.css)
