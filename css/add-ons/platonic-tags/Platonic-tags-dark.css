@@ -1,0 +1,4 @@
+li.relationships:has(a[href*="%20*a*%20"]) a.tag,
+[class^="relationship"] a[href*="%20*a*%20"] {
+  background-color: #a789ce !important;
+}
