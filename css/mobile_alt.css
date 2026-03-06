@@ -19,6 +19,11 @@ h2.heading+h3.heading:not(.landmark) {
 >> 03 REGION: HEADER
 ============================================================*/
 
+/* Override base header padding */
+#header {
+  padding-block: 0;
+}
+
 /* header dropdown menus */
 #header .menu {
   width: 96%;
