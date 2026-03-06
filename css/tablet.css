@@ -15,6 +15,11 @@
 >> 03 REGION: HEADER
 ============================================================*/
 
+/* Override base header padding */
+#header {
+  padding-block: 0;
+}
+
 #header .heading {
   margin-left: var(--margins-narrow);
 }
