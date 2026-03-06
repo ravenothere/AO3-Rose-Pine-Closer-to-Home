@@ -220,6 +220,7 @@ col.name {
     align-items: center;
     align-content: center;
     column-gap: 1.25em;
+    padding-block: 0.5em;
     position: unset;
     z-index: 100;
     box-sizing: border-box;
