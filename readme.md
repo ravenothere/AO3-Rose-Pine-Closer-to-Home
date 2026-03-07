@@ -34,53 +34,6 @@ This fork restores some of the default AO3 interface aesthetics, bringing back a
 
 ---
 
-## What's Different
-
-### [`base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css) & [`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)
-
-| What changed | Section |
-|-------------|---------|
-| Header item alignment changed from `flex-start` to `center` — logo, text, and icons are now centered in the header for a more aligned look on desktop and tablet | Header |
-| Removed the rule that hid the default AO3 logo and "Archive of Our Own beta" text — Logo color changed to match the Rosé Pine palette | Header |
-| Added `padding-block: 0.5em` to the header so the logo has breathing room from the top and bottom edges on desktop | Header |
-| Removed the custom blurb header layout — fandom tags, rating icons, and work titles go back to their original AO3 positions | Blurb Header Layout |
-
-> Both the Normal Layout ([`base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css)) and Card Layout ([`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)) received the same changes.
-
----
-
-### [`theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css), [`theme_rosepinemoon.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinemoon.css) & [`theme_rosepine.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepine.css)
-
-| What changed | Section |
-|-------------|---------|
-| Content icon border radius changed from `0.75rem` (fully round) to `0.25rem` (round-edged square, closer to default AO3) | Icon Border Radius |
-| Main text size bumped from `100%` to `110%`, work text size from `110%` to `115%` — slightly larger to compensate for the custom font rendering smaller | Text Size |
-| All content icon colors replaced with pastel tones closer to the default AO3 palette | Icon Colors |
-| Tag background colors changed to softer pastels for easier readability | Tag Colors |
-| Changed the fonts and added work fonts — check out the [Customization](#customization) section to add your own | Fonts |
-| Removed all text decorations (✿ in header title, dashboard tab, section headings, and freeform tags) | Text Decorations |
-
-> All three theme files received the same changes. [`theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css) additionally has explicit tag text colors set to `#464261` for better readability on the light background.
-
----
-
-### [`mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile.css) & [`mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile_alt.css)
-
-| What changed | Section |
-|-------------|---------|
-| Removed the `"AO3 ✿"` header title fix — handled directly in the skin | Header |
-| Added `padding-block: 0` to reset the header padding added in the base skin — keeps the layout compact | Header |
-
----
-
-### [`tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet.css) & [`tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet_alt.css)
-
-| What changed | Section |
-|-------------|---------|
-| Added `padding-block: 0` to reset the header padding added in the base skin — keeps the layout compact | Header |
-
----
-
 ## Installation
 
 ### Choose Your Layout
@@ -221,6 +174,53 @@ Want to take things further? Check out my **[AO3 Tweaks](https://github.com/rave
 - ...and a growing list of small quality-of-life tweaks
 
 Drop any of them into your parent chain and they just work!
+
+---
+
+## What's Different
+
+### [`base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css) & [`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)
+
+| What changed | Section |
+|-------------|---------|
+| Header item alignment changed from `flex-start` to `center` — logo, text, and icons are now centered in the header for a more aligned look on desktop and tablet | Header |
+| Logo color changed to match the Rosé Pine palette | Header |
+| Added `padding-block: 0.5em` to the header so the logo has breathing room from the top and bottom edges on desktop | Header |
+| Removed the custom blurb header layout — fandom tags, rating icons, and work titles go back to their original AO3 positions | Blurb Header Layout |
+
+> Both the Normal Layout ([`base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css)) and Card Layout ([`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)) received the same changes.
+
+---
+
+### [`theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css), [`theme_rosepinemoon.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinemoon.css) & [`theme_rosepine.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepine.css)
+
+| What changed | Section |
+|-------------|---------|
+| Content icon border radius changed from `0.75rem` (fully round) to `0.25rem` (round-edged square, closer to default AO3) | Icon Border Radius |
+| Main text size bumped from `100%` to `110%`, work text size from `110%` to `115%` — slightly larger to compensate for the custom font rendering smaller | Text Size |
+| All content icon colors replaced with pastel tones closer to the default AO3 palette | Icon Colors |
+| Tag background colors changed to softer pastels for easier readability | Tag Colors |
+| Changed the fonts and added work fonts — check out the [Customization](#customization) section to add your own | Fonts |
+| Removed all text decorations (✿ in header title, dashboard tab, section headings, and freeform tags) | Text Decorations |
+
+> All three theme files received the same changes. [`theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css) additionally has explicit tag text colors set to `#464261` for better readability on the light background.
+
+---
+
+### [`mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile.css) & [`mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile_alt.css)
+
+| What changed | Section |
+|-------------|---------|
+| Removed the `"AO3 ✿"` header title fix — handled directly in the skin | Header |
+| Added `padding-block: 0` to reset the header padding added in the base skin — keeps the layout compact | Header |
+
+---
+
+### [`tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet.css) & [`tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet_alt.css)
+
+| What changed | Section |
+|-------------|---------|
+| Added `padding-block: 0` to reset the header padding added in the base skin — keeps the layout compact | Header |
 
 ---
 
