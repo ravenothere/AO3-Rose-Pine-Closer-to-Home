@@ -34,19 +34,6 @@ This fork restores some of the default AO3 interface aesthetics, bringing back a
 
 ---
 
-## ⚠️ Required Add-ons
-
-This fork moves the fonts and AO3 title out of the main skin files into separate skins. **The theme will look incomplete without them.** Install these alongside the main skin:
-
-| Add-on | Why it's needed | How to install |
-|--------|----------------|----------------|
-| [AO3 Logo in header](https://github.com/ravenothere/AO3-Tweaks/tree/main#ao3-logo-in-header) | Removes the " Archive of Our Own" text and keeps the AO3 logo at the header recolored in Rosé Pine tone | AO3 Skin |
-| [Header Padding](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#header-padding) | Adds padding so the header sits right on desktop | [Stylus](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#stylus-css) |
-| [Custom Fonts](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#custom-fonts---by-wolfbatcat) | Sets the custom site, headings, code, and work fonts | AO3 Skin |
-
-> Extra standalone add-ons ([LGBTQ+ tags](https://github.com/ravenothere/AO3-Tweaks/tree/main#lgbtq-color-coded-tags), [EPUB button](https://github.com/ravenothere/AO3-Tweaks/tree/main#epub-download-button), and more) → Here: **[AO3-Tweaks](https://github.com/ravenothere/AO3-Tweaks)**
----
-
 ## What's Different
 
 ### [`base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css) & [`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)
@@ -54,7 +41,8 @@ This fork moves the fonts and AO3 title out of the main skin files into separate
 | What changed | Section |
 |-------------|---------|
 | Header item alignment changed from `flex-start` to `center` — logo, text, and icons are now centered in the header for a more aligned look on desktop and tablet | Header |
-| Removed the rule that hid the default AO3 logo and "Archive of Our Own beta" text — the logo is now restored via the [required add-on](https://github.com/ravenothere/AO3-Tweaks/tree/main#ao3-logo-in-header) above | Header |
+| Removed the rule that hid the default AO3 logo and "Archive of Our Own beta" text — Logo color changed to match the Rosé Pine palette | Header |
+| Added `padding-block: 0.5em` to the header so the logo has breathing room from the top and bottom edges on desktop | Header |
 | Removed the custom blurb header layout — fandom tags, rating icons, and work titles go back to their original AO3 positions | Blurb Header Layout |
 
 > Both the Normal Layout ([`base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css)) and Card Layout ([`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)) received the same changes.
@@ -69,7 +57,7 @@ This fork moves the fonts and AO3 title out of the main skin files into separate
 | Main text size bumped from `100%` to `110%`, work text size from `110%` to `115%` — slightly larger to compensate for the custom font rendering smaller | Text Size |
 | All content icon colors replaced with pastel tones closer to the default AO3 palette | Icon Colors |
 | Tag background colors changed to softer pastels for easier readability | Tag Colors |
-| Removed the fonts section — moved to a [separate skin](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#custom-fonts---by-wolfbatcat) (see [Required Add-ons](#️-required-add-ons)) | Fonts |
+| Changed the fonts and added work fonts — check out the [Customization](#customization) section to add your own | Fonts |
 | Removed all text decorations (✿ in header title, dashboard tab, section headings, and freeform tags) | Text Decorations |
 
 > All three theme files received the same changes. [`theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css) additionally has explicit tag text colors set to `#464261` for better readability on the light background.
@@ -80,13 +68,16 @@ This fork moves the fonts and AO3 title out of the main skin files into separate
 
 | What changed | Section |
 |-------------|---------|
-| Removed the `"AO3 ✿"` header title fix — the [logo add-on](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#ao3-logo-in-header) handles the header on mobile | Header |
+| Removed the `"AO3 ✿"` header title fix — handled directly in the skin | Header |
+| Added `padding-block: 0` to reset the header padding added in the base skin — keeps the layout compact | Header |
 
 ---
 
 ### [`tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet.css) & [`tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet_alt.css)
 
-No changes.
+| What changed | Section |
+|-------------|---------|
+| Added `padding-block: 0` to reset the header padding added in the base skin — keeps the layout compact | Header |
 
 ---
 
@@ -100,6 +91,7 @@ Before you begin, decide which layout you prefer:
 - **Card Layout:** Uses [`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css), [`tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet_alt.css), and [`mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile_alt.css)
 
 Check the [previews above](#preview) to see which style you prefer, then follow the instructions below using the files for your chosen layout. Note that both layouts use the same theme files, so you can pick any theme you like regardless of which layout you choose.
+
 <details>
 <summary><b>Step 1 — Create the base skin</b></summary>
 
@@ -107,7 +99,7 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 2. Name it `[XYZ] Rosé Pine CTH - Base` — Replace `XYZ` with your username or initials.
 3. Paste the contents of your chosen base file:
    - Normal layout → [`css/base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css)
-   - Card layout → [`css/base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet_alt.css)
+   - Card layout → [`css/base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)
 4. Under **Advanced**, set to **Parent Only**
 5. Click **Submit**
 
@@ -123,8 +115,6 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
    - [`css/theme_rosepine.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepine.css)
 3. Set to **Parent Only** and submit
 
-> The other theme variants (Moon Cool, Rosé Pine Cool) were not modified in this fork.
-
 </details>
 
 <details>
@@ -133,34 +123,12 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 1. Create a second theme skin (e.g. [Dawn](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css) for light, [Moon]((https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinemoon.css)) for dark)
 2. On your dark theme skin, go to **Advanced → Choose @media** → select `(prefers-color-scheme: dark)`
 3. On your light theme skin, select `(prefers-color-scheme: light)`
-4. Add both in the parent chain at Step 6 — they'll switch automatically based on your system settings
+4. Add both in the parent chain at Step 5 — they'll switch automatically based on your system settings
 
 </details>
 
 <details>
-<summary><b>Step 3 — Install the required add-ons</b></summary>
-
-Before chaining the skins, install these three from [AO3 Tweaks](https://github.com/ravenothere/AO3-Tweaks):
-
-**[AO3 Logo in header](https://github.com/ravenothere/AO3-Tweaks/tree/main#ao3-logo-in-header)**
-1. Create a skin named `[XYZ] Rosé Pine CTH - Logo`
-2. Paste the [CSS](https://github.com/ravenothere/AO3-Tweaks/blob/main/add-ons/CSS/only-logo-in-header-Colored.css) from the add-on
-3. Set to **Parent Only** and submit
-
-**[Header Padding](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#header-padding)** — *you can skip this if you don't use desktop or aren't bothered by the [logo snapping to the borders of the header](https://raw.githubusercontent.com/ravenothere/AO3-Tweaks/main/images/header-padding.png)*
-- Install via the [Stylus](https://github.com/openstyles/stylus) browser extension — instructions in the [AO3 Tweaks readme](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#header-padding)
-- This one doesn't go in the AO3 parent chain, Stylus handles it separately
-
-**[Custom Fonts](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#custom-fonts---by-wolfbatcat)**
-1. Create a skin named `[XYZ] Rosé Pine CTH - Fonts`
-2. Paste the CSS from the add-on
-3. Set to **Parent Only** and submit
-
->if you want your custom fonts to show up on your mobile check out my [Custom Fonts for Mobile](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#custom-fonts-for-mobile) CSS on [AO3 Tweaks](https://github.com/ravenothere/AO3-Tweaks) the full instructions are there
-</details>
-
-<details>
-<summary><b>Step 4 — Create the tablet skin</b></summary>
+<summary><b>Step 3 — Create the tablet skin</b></summary>
 
 1. Create a skin named `[XYZ] Rosé Pine CTH - Tablet`
 2. Paste the contents of your chosen tablet file:
@@ -172,7 +140,7 @@ Before chaining the skins, install these three from [AO3 Tweaks](https://github.
 </details>
 
 <details>
-<summary><b>Step 5 — Create the mobile skin</b></summary>
+<summary><b>Step 4 — Create the mobile skin</b></summary>
 
 1. Create a skin named `[XYZ] Rosé Pine CTH - Mobile`
 2. Paste the contents of your chosen mobile file:
@@ -184,20 +152,75 @@ Before chaining the skins, install these three from [AO3 Tweaks](https://github.
 </details>
 
 <details>
-<summary><b>Step 6 — Chain everything together</b></summary>
+<summary><b>Step 5 — Chain everything together</b></summary>
 
 1. Create one final skin named `[XYZ] Rosé Pine CTH - Default`
 2. In the CSS field paste: `.rose-pine { opacity: 1; }` (placeholder so AO3 lets you save)
 3. Under **Advanced → Parent Skins**, add them in this order:
    1. `[XYZ] Rosé Pine CTH - Base`
    2. `[XYZ] Rosé Pine Dawn CTH` / `[XYZ] Rosé Pine Moon CTH` / `[XYZ] Rosé Pine CTH` *(or both if using auto switching)*
-   3. `[XYZ] Rosé Pine CTH - Logo`
-   4. `[XYZ] Rosé Pine CTH - Fonts`
-   5. `[XYZ] Rosé Pine CTH - Tablet`
-   6. `[XYZ] Rosé Pine CTH - Mobile`
+   3. `[XYZ] Rosé Pine CTH - Tablet`
+   4. `[XYZ] Rosé Pine CTH - Mobile`
 4. Click **Submit** then **Use**
 
 </details>
+
+---
+
+## Customization
+
+<details>
+<summary><b>Fonts</b></summary>
+
+To change fonts, open your theme skin and use Ctrl+F to search for `font-family`. You'll find three blocks — one for the main site font, one for headings, and one for code. Replace the first font name in each with your preferred font, keeping the fallbacks:
+
+```css
+font-family: YourFont, Apfel Grotezk, Figtree, Bitter, Helvetica, Arial, sans-serif;
+```
+
+> **Important:** The fonts must be installed on your device for them to display. If a font isn't installed, the browser will fall back to the next one in the list.
+
+**On mobile:** AO3 can only display fonts already installed on your device. Since installing fonts system-wide on Android doesn't make them available to browsers, the recommended approach is to use the [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) extension on Firefox for Android — it can load fonts directly into the browser without needing them installed on your device. The [AO3: Rosé Pine Fonts](https://userstyles.world/style/26908/ao3-rose-pine-fonts) userstyle has the fonts for this skin ready to go — just install it and you're done. If you want to use your own custom fonts on mobile instead, see my [Custom Fonts for Mobile](https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#custom-fonts-for-mobile) guide.
+
+</details>
+
+<details>
+<summary><b>Font size</b></summary>
+
+In your theme skin, find these two variables near the top:
+
+```css
+--txt-size-main: 110%;   /* main text size */
+--txt-size-work: 115%;   /* work text size */
+```
+
+`--txt-size-main` controls text across the whole site (navigation, blurbs, forms, etc.), while `--txt-size-work` is just for the actual work content. Increase the percentage for larger text or decrease it for smaller. Going above `130%` for `--txt-size-main` may cause minor layout issues.
+
+</details>
+
+<details>
+<summary><b>Platonic ship tags</b></summary>
+
+Want platonic ships (relationships with the `&` symbol) to stand out with their own color? Here are pre-made add-on skins with the distinction already built in:
+
+- [Platonic-tags-light.css](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/add-ons/platonic-tags/Platonic-tags-light.css) — for Dawn / light theme
+- [Platonic-tags-dark.css](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/add-ons/platonic-tags/Platonic-tags-dark.css) — for Moon, Rosé Pine / dark themes
+
+Add whichever matches your theme to the parent chain after your theme skin. If you're using auto light/dark switching, add both.
+
+</details>
+
+---
+
+## More Add-ons
+
+Want to take things further? Check out my **[AO3 Tweaks](https://github.com/ravenothere/AO3-Tweaks)** — a collection of standalone add-ons that work with any AO3 skin, including this one:
+
+- **[LGBTQ+ color coded tags](https://github.com/ravenothere/AO3-Tweaks#lgbtq-color-coded-tags)** — highlight LGBTQ+ related tags with their corresponding pride flag colors
+- **[EPUB download button](https://github.com/ravenothere/AO3-Tweaks#epub-download-button)** — adds an EPUB download button directly on work blurbs while you're browsing
+- ...and a growing list of small quality-of-life tweaks
+
+Drop any of them into your parent chain and they just work!
 
 ---
 
