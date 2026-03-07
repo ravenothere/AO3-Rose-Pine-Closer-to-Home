@@ -125,7 +125,7 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 <details>
 <summary><b>Fonts</b></summary>
 
-To change fonts, open your theme skin and use Ctrl+F to search for `font-family`. You'll find three blocks — one for the main site font, one for headings, and one for code. Replace the first font name in each with your preferred font, keeping the fallbacks:
+To change fonts, open your theme skin and use Ctrl+F to search for `font-family`. You'll find four blocks — one for the main site font, one for headings, one for code, and one for works. Replace the first font name in each with your preferred font, keeping the fallbacks:
 
 ```css
 font-family: YourFont, Apfel Grotezk, Figtree, Bitter, Helvetica, Arial, sans-serif;
