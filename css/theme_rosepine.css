@@ -208,3 +208,69 @@ GLOBAL VARIABLES
   --rich-txt-editor:     none;
 
 }
+
+
+/*>========== FONTS ==========<*/
+
+/* MAIN FONT FAMILY */
+body,
+input,
+.toggled form,
+.dynamic form,
+.secondary,
+.dropdown,
+blockquote,
+.prompt .blurb h6,
+.bookmark .user .meta,
+a.work,
+span.symbol,
+.heading .actions,
+.heading .action,
+.heading span.actions,
+button,
+span.unread,
+.replied,
+span.claimed,
+.actions span.defaulted,
+.splash .news .meta,
+.datetime,
+h5.fandoms.heading a.tag,
+dd.fandom.tags a,
+select {
+    font-family: Apfel Grotezk, Figtree, Bitter, Helvetica, "Trebuchet MS", "Lucida Sans", Arial, sans-serif, "GNU Unifont";
+}
+
+/* HEADINGS FONT FAMILY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+    font-family: Apfel Grotezk Fett, Figtree, Bitter, Helvetica, "Trebuchet MS", "Lucida Sans", Arial, sans-serif, "GNU Unifont";
+    font-weight: var(--txt-bold);
+}
+
+/* CODE FONT FAMILY */
+kbd,
+tt,
+code,
+var,
+pre,
+samp,
+textarea,
+textarea#skin_css,
+.css.module blockquote pre,
+#floaty-textarea {
+    font-family: Victor Mono Medium, Consolas, Monaco, Courier, monospace;
+    font-size: 0.9em;
+    /* font-style: italic; */
+    /* for cursive version of Victor Mono */
+}
+
+/* Works Font */
+#workskin,
+.preface * {
+  font-family: Domine, serif;
+}
