@@ -40,8 +40,8 @@ This fork restores some of the default AO3 interface aesthetics, bringing back a
 
 Before you begin, decide which layout you prefer:
 
-- **Normal Layout:** Uses [`base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css), [`tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet.css), and [`mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile.css)
-- **Card Layout:** Uses [`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css), [`tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet_alt.css), and [`mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile_alt.css)
+- **Normal Layout:** Uses [`CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css), [`CTH_tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet.css), and [`CTH_mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile.css)
+- **Card Layout:** Uses [`CTH_base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_alt.css), [`CTH_tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_alt.css), and [`CTH_mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_alt.css)
 
 Check the [previews above](#preview) to see which style you prefer, then follow the instructions below using the files for your chosen layout. Note that both layouts use the same theme files, so you can pick any theme you like regardless of which layout you choose.
 
@@ -51,8 +51,8 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 1. Go to **Dashboard → Skins → My Site Skins → [Create Site Skin](https://archiveofourown.org/skins/new?skin_type=Skin)**
 2. Name it `[XYZ] Rosé Pine CTH - Base` — Replace `XYZ` with your username or initials.
 3. Paste the contents of your chosen base file:
-   - Normal layout → [`css/base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css)
-   - Card layout → [`css/base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)
+   - Normal layout → [`css/CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css)
+   - Card layout → [`css/CTH_base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_alt.css)
 4. Under **Advanced**, set to **Parent Only**
 5. Click **Submit**
 
@@ -63,9 +63,9 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 
 1. Create a skin named `[XYZ] Rosé Pine Dawn CTH`, `[XYZ] Rosé Pine Moon CTH`, or `[XYZ] Rosé Pine CTH` — Replace `XYZ` with your username or initials.
 2. Paste the contents of your chosen theme file:
-   - [`css/theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css)
-   - [`css/theme_rosepinemoon.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinemoon.css)
-   - [`css/theme_rosepine.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepine.css)
+   - [`css/CTH_theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepinedawn.css)
+   - [`css/CTH_theme_rosepinemoon.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepinemoon.css)
+   - [`css/CTH_theme_rosepine.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepine.css)
 3. Set to **Parent Only** and submit
 
 </details>
@@ -73,7 +73,7 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 <details>
 <summary><b>Step 2a — Auto light/dark switching (optional)</b></summary>
 
-1. Create a second theme skin (e.g. [Dawn](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css) for light, [Moon]((https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinemoon.css)) for dark)
+1. Create a second theme skin (e.g. [Dawn](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepinedawn.css) for light, [Moon](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepinemoon.css) for dark)
 2. On your dark theme skin, go to **Advanced → Choose @media** → select `(prefers-color-scheme: dark)`
 3. On your light theme skin, select `(prefers-color-scheme: light)`
 4. Add both in the parent chain at Step 5 — they'll switch automatically based on your system settings
@@ -85,8 +85,8 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 
 1. Create a skin named `[XYZ] Rosé Pine CTH - Tablet`
 2. Paste the contents of your chosen tablet file:
-   - Normal layout → [`css/tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet.css)
-   - Card layout → [`css/tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet_alt.css)
+   - Normal layout → [`css/CTH_tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet.css)
+   - Card layout → [`css/CTH_tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_alt.css)
 3. Under **Advanced → Choose @media**, select `only screen (max-width: 62em)`
 4. Set to **Parent Only** and submit
 
@@ -97,8 +97,8 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 
 1. Create a skin named `[XYZ] Rosé Pine CTH - Mobile`
 2. Paste the contents of your chosen mobile file:
-   - Normal layout → [`css/mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile.css)
-   - Card layout → [`css/mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile_alt.css)
+   - Normal layout → [`css/CTH_mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile.css)
+   - Card layout → [`css/CTH_mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_alt.css)
 3. Under **Advanced → Choose @media**, select `only screen (max-width: 42em)`
 4. Set to **Parent Only** and submit
 
@@ -156,8 +156,8 @@ In your theme skin, find these two variables near the top:
 
 Want platonic ships (relationships with the `&` symbol) to stand out with their own color? Here are pre-made add-on skins with the distinction already built in:
 
-- [Platonic-tags-light.css](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/add-ons/platonic-tags/Platonic-tags-light.css) — for Dawn / light theme
-- [Platonic-tags-dark.css](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/add-ons/platonic-tags/Platonic-tags-dark.css) — for Moon, Rosé Pine / dark themes
+- [CTH_Platonic-tags-light.css](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/add-ons/platonic-tags/CTH_Platonic-tags-light.css) — for Dawn / light theme
+- [CTH_Platonic-tags-dark.css](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/add-ons/platonic-tags/CTH_Platonic-tags-dark.css) — for Moon, Rosé Pine / dark themes
 
 Add whichever matches your theme to the parent chain after your theme skin. If you're using auto light/dark switching, add both.
 
@@ -179,7 +179,7 @@ Drop any of them into your parent chain and they just work!
 
 ## What's Different
 
-### [`base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css) & [`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)
+### [`CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css) & [`CTH_base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_alt.css)
 
 | What changed | Section |
 |-------------|---------|
@@ -188,11 +188,11 @@ Drop any of them into your parent chain and they just work!
 | Added `padding-block: 0.5em` to the header so the logo has breathing room from the top and bottom edges on desktop | Header |
 | Removed the custom blurb header layout — fandom tags, rating icons, and work titles go back to their original AO3 positions, adjusted bookmark title padding from `14ch` to `6ch` | Blurb Header Layout |
 
-> Both the Normal Layout ([`base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css)) and Card Layout ([`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)) received the same changes.
+> Both the Normal Layout ([`CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css)) and Card Layout ([`CTH_base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_alt.css)) received the same changes.
 
 ---
 
-### [`theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css), [`theme_rosepinemoon.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinemoon.css) & [`theme_rosepine.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepine.css)
+### [`CTH_theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepinedawn.css), [`CTH_theme_rosepinemoon.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepinemoon.css) & [`CTH_theme_rosepine.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepine.css)
 
 | What changed | Section |
 |-------------|---------|
@@ -203,11 +203,11 @@ Drop any of them into your parent chain and they just work!
 | Changed the fonts and added work fonts — check out the [Customization](#customization) section to add your own | Fonts |
 | Removed all text decorations (✿ in header title, dashboard tab, section headings, and freeform tags) | Text Decorations |
 
-> All three theme files received the same changes. [`theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/theme_rosepinedawn.css) additionally has explicit tag text colors set to `#464261` for better readability on the light background.
+> All three theme files received the same changes. [`CTH_theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepinedawn.css) additionally has explicit tag text colors set to `#464261` for better readability on the light background.
 
 ---
 
-### [`mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile.css) & [`mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/mobile_alt.css)
+### [`CTH_mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile.css) & [`CTH_mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_alt.css)
 
 | What changed | Section |
 |-------------|---------|
@@ -216,7 +216,7 @@ Drop any of them into your parent chain and they just work!
 
 ---
 
-### [`tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet.css) & [`tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/tablet_alt.css)
+### [`CTH_tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet.css) & [`CTH_tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_alt.css)
 
 | What changed | Section |
 |-------------|---------|
@@ -226,5 +226,4 @@ Drop any of them into your parent chain and they just work!
 
 ## Credits
 
-All credit for the original skin goes to [Wolfbatcat](https://github.com/Wolfbatcat/ao3-rose-pine).  
-and [neos by ZerafinaCSS](https://github.com/ZerafinaCSS/neos) as its foundation.
+All credit for the original skin goes to [Wolfbatcat](https://github.com/Wolfbatcat/ao3-rose-pine), built on [neos by ZerafinaCSS](https://github.com/ZerafinaCSS/neos).
