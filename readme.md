@@ -186,7 +186,7 @@ Drop any of them into your parent chain and they just work!
 | Header item alignment changed from `flex-start` to `center` — logo, text, and icons are now centered in the header for a more aligned look on desktop and tablet | Header |
 | Logo color changed to match the Rosé Pine palette | Header |
 | Added `padding-block: 0.5em` to the header so the logo has breathing room from the top and bottom edges on desktop | Header |
-| Removed the custom blurb header layout — fandom tags, rating icons, and work titles go back to their original AO3 positions | Blurb Header Layout |
+| Removed the custom blurb header layout — fandom tags, rating icons, and work titles go back to their original AO3 positions, adjusted bookmark title padding from `14ch` to `6ch` | Blurb Header Layout |
 
 > Both the Normal Layout ([`base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base.css)) and Card Layout ([`base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/base_alt.css)) received the same changes.
 
