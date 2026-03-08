@@ -175,7 +175,7 @@ GLOBAL VARIABLES
 
   /* HOVER AND FOCUS */
   --tag-hgl-bg:          var(--int-btn-hgl-bg);
-  --tag-hgl-txt:         var(--txt-alt2);
+  --tag-hgl-txt:         #464261;
   --tag-hsl-shadow:      inset 0 0 0 1px rgba(255,255,255,0.3);
 
 
