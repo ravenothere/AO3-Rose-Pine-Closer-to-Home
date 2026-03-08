@@ -278,8 +278,11 @@ col.name {
 
 /* hide default "Archive of Our Own beta" text and recolor logo */
 #header .logo {
-  filter: brightness(0) saturate(100%) invert(60%) sepia(87%) saturate(545%) hue-rotate(305deg) brightness(96%) contrast(92%);
-  -webkit-filter: brightness(0) saturate(100%) invert(60%) sepia(87%) saturate(545%) hue-rotate(305deg) brightness(96%) contrast(92%);
+  filter: var(--header-icon-hgl);
+}
+
+#header .logo:is(:hover, :focus) {
+  filter: var(--header-icon);
 }
 
 #header h1.heading a span,
@@ -2138,7 +2141,7 @@ li.picture.blurb,
 }
 
 .bookmark .blurb h4.heading {
-    padding-right: 14ch;
+    padding-right: 6ch;
 }
 
 .bookmark p.status {
