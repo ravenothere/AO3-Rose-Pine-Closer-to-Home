@@ -3434,7 +3434,7 @@ img[src$="/images/skins/iconsets/default/warning-choosenotto.png"] {
 img[src$="/images/skins/iconsets/default/warning-yes.png"] {
     background: url("https://wolfbatcat.github.io/ao3-rose-pine/assets/zerafina-icon-warning-yes-01.png");
     background-color: var(--icon-warning-yes);
-    background-position: center -2px;
+    background-position: center -1px;
 }
 
 .required-tags .external-work,
