@@ -517,13 +517,18 @@ col.name {
 
 /*>========== COLLECTIONS CONTEXT ==========<*/
 
+#header:has(h2) {
+    padding-bottom: 0;
+}
+
 #header h2 {
     order: 4;
     display: block;
     width: 100%;
     min-height: unset;
     max-height: 30vh;
-    padding: 0.25em var(--margins-header);
+    margin-top: 0.25em;
+    padding: 0.5em var(--margins-header);
     border-inline: none;
     border-top: var(--border-width) solid var(--border2);
     background-color: var(--link-hgl) !important;
