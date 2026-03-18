@@ -32,6 +32,15 @@ This fork restores some of the default AO3 interface aesthetics, bringing back a
 
 </details>
 
+<details>
+<summary>Preview Alternative Tag Style</summary>
+
+| Rosé Pine Dawn (Style B) | Rosé Pine / Rosé Pine Moon (Style B) |
+| --- | --- |
+| ![Rosé Pine Dawn Alternative Tags](images/CTH-tags-rosepinedawn-b.png) | ![Rosé Pine Alternative Tags](images/CTH-tags-rosepine-b.png) |
+
+</details>
+
 ---
 
 ## Installation
@@ -74,14 +83,32 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 <summary><b>Step 2a — Auto light/dark switching (optional)</b></summary>
 
 1. Create a second theme skin (e.g. [Dawn](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepinedawn.css) for light, [Moon](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepinemoon.css) for dark)
-2. On your dark theme skin, go to **Advanced → Choose @media** → select `(prefers-color-scheme: dark)`
-3. On your light theme skin, select `(prefers-color-scheme: light)`
-4. Add both in the parent chain at Step 5 — they'll switch automatically based on your system settings
+2. Paste the CSS from your second theme, set to **Parent Only**
+3. On your **dark theme skin**, go to **Advanced → Choose @media** → select `(prefers-color-scheme: dark)`
+4. On your **light theme skin**, select `(prefers-color-scheme: light)`
+5. When you get to Step 5, add **both** theme skins to the parent chain — they'll switch automatically
+
+> **Known AO3 bug:** The skin editor sometimes doesn't save @media settings properly when editing an existing skin. If you run into this, delete the skin and create a new one with the correct settings.
+
+</details>
+
+<details>
+<summary><b>Step 2b — Alternative tag style (optional)</b></summary>
+
+Want a different tag style? This optional add-on changes how tags appear throughout the site. [Previews above.](#preview)
+
+1. Create a skin named `[XYZ] Rosé Pine CTH - Tag Mod`
+2. Paste the code from the tag mod file that matches your theme:
+   - For Rosé Pine Dawn → [`css/extras/tags/CTH_tags_rosepinedawn_b.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/extras/tags/CTH_tags_rosepinedawn_b.css)
+   - For Rosé Pine & Rosé Pine Moon → [`css/extras/tags/CTH_tags_rosepine_b.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/extras/tags/CTH_tags_rosepine_b.css)
+3. Set to **Parent Only** and submit
 
 </details>
 
 <details>
 <summary><b>Step 3 — Create the tablet skin</b></summary>
+
+> **Important:** The tablet and mobile skins are required — the theme won't display correctly without them.
 
 1. Create a skin named `[XYZ] Rosé Pine CTH - Tablet`
 2. Paste the contents of your chosen tablet file:
@@ -111,9 +138,11 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 2. In the CSS field paste: `.rose-pine { opacity: 1; }` (placeholder so AO3 lets you save)
 3. Under **Advanced → Parent Skins**, add them in this order:
    1. `[XYZ] Rosé Pine CTH - Base`
-   2. `[XYZ] Rosé Pine Dawn CTH` / `[XYZ] Rosé Pine Moon CTH` / `[XYZ] Rosé Pine CTH` *(or both if using auto switching)*
-   3. `[XYZ] Rosé Pine CTH - Tablet`
-   4. `[XYZ] Rosé Pine CTH - Mobile`
+   2. **Single theme:** your theme skin (e.g. `[XYZ] Rosé Pine Dawn CTH`)
+      **OR for auto switching:** add *both* of your theme skins — order doesn't matter since they use @media queries
+   3. **(Optional)** `[XYZ] Rosé Pine CTH - Tag Mod` — only if you created the alternative tag style skin in Step 2b
+   4. `[XYZ] Rosé Pine CTH - Tablet`
+   5. `[XYZ] Rosé Pine CTH - Mobile`
 4. Click **Submit** then **Use**
 
 </details>
@@ -152,14 +181,69 @@ In your theme skin, find these two variables near the top:
 </details>
 
 <details>
+<summary><b>Tag colors</b></summary>
+
+Want to change up the tag colors? The variables are in the `TAG COLORS` section near the top of your theme file:
+
+```css
+/*>========== TAG COLORS ==========<*/
+
+  /* BACKGROUND */
+  --tag-default-bg:      #f0f8f9;
+  --tag-fandom-bg:       #d8edc2;
+  --tag-warning-bg:      #fadaae;
+  --tag-ship-bg:         #f1bab8;
+  --tag-character-bg:    #b8d9e6;
+  --tag-freeform-bg:     var(--tag-default-bg);
+  --tag-splash-bg:       #F6ECE3;
+
+  /* TEXT */
+  --tag-default-txt:     #464261;
+  --tag-fandom-txt:      #464261;
+  --tag-warning-txt:     #464261;
+  --tag-ship-txt:        #464261;
+  --tag-character-txt:   #464261;
+  --tag-freeform-txt:    #464261;
+```
+
+Just swap out the hex color values with whatever you like. You can also tweak the text color for each tag type using the `--tag-*-txt` variables.
+
+> **Note:** Leave `--tag-splash-bg` alone — it's specifically for the splash page and doesn't affect regular tag colors.
+
+> **If you're using the Alternative Tag Style add-on (Step 2b):** Change the tag colors in the tag add-on skin instead of the theme skin. The border and text colors are controlled by the tag text variables (like `--tag-default-txt`).
+
+</details>
+
+<details>
 <summary><b>Platonic ship tags</b></summary>
 
 Want platonic ships (relationships with the `&` symbol) to stand out with their own color? Here are pre-made add-on skins with the distinction already built in:
 
-- [CTH_Platonic-tags-light.css](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/add-ons/platonic-tags/CTH_Platonic-tags-light.css) — for Dawn / light theme
-- [CTH_Platonic-tags-dark.css](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/add-ons/platonic-tags/CTH_Platonic-tags-dark.css) — for Moon, Rosé Pine / dark themes
+**Style A (default tag style):**
+- [`css/extras/tags/CTH_tags_rosepinedawn_a_plat.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/extras/tags/CTH_tags_rosepinedawn_a_plat.css) — For Rosé Pine Dawn
+- [`css/extras/tags/CTH_tags_rosepine_a_plat.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/extras/tags/CTH_tags_rosepine_a_plat.css) — For Rosé Pine
+- [`css/extras/tags/CTH_tags_rosepinemoon_a_plat.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/extras/tags/CTH_tags_rosepinemoon_a_plat.css) — For Rosé Pine Moon
 
-Add whichever matches your theme to the parent chain after your theme skin. If you're using auto light/dark switching, add both.
+**Style B (alternative tag style):**
+- [`css/extras/tags/CTH_tags_rosepinedawn_b_plat.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/extras/tags/CTH_tags_rosepinedawn_b_plat.css) — For Rosé Pine Dawn
+- [`css/extras/tags/CTH_tags_rosepine_b_plat.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/extras/tags/CTH_tags_rosepine_b_plat.css) — For Rosé Pine and Rosé Pine Moon
+
+Add whichever matches your theme and style to the parent chain after your theme skin (or after the tag mod skin if you're using one). If you're using auto light/dark switching, add both.
+
+Recommended to use alongside [AO3: Reorder Ship Tags](https://greasyfork.org/en/scripts/562812-ao3-reorder-ship-tags).
+
+</details>
+
+<details>
+<summary><b>Original Rosé Pine colors</b></summary>
+
+Prefer the original Rosé Pine color palette? You can use one of these theme skins instead of the Closer to Home ones when following the installation steps — everything else stays the same:
+
+- [Rosé Pine Dawn](https://github.com/Wolfbatcat/ao3-rose-pine/blob/main/css/extras/cth/theme_rosepinedawn_cth.css)
+- [Rosé Pine Moon](https://github.com/Wolfbatcat/ao3-rose-pine/blob/main/css/extras/cth/theme_rosepinemoon_cth.css)
+- [Rosé Pine Moon Cool](https://github.com/Wolfbatcat/ao3-rose-pine/blob/main/css/extras/cth/theme_rosepinemooncool_cth.css)
+- [Rosé Pine](https://github.com/Wolfbatcat/ao3-rose-pine/blob/main/css/extras/cth/theme_rosepine_cth.css)
+- [Rosé Pine Cool](https://github.com/Wolfbatcat/ao3-rose-pine/blob/main/css/extras/cth/theme_rosepinecool_cth.css)
 
 </details>
 
@@ -184,9 +268,13 @@ Drop any of them into your parent chain and they just work!
 | What changed | Section |
 |-------------|---------|
 | Header item alignment changed from `flex-start` to `center` — logo, text, and icons are now centered in the header for a more aligned look on desktop and tablet | Header |
-| Logo color changed to match the Rosé Pine palette | Header |
+| Logo color changed to match the theme using the `--header-icon-hgl` variable | Header |
+| Logo filter uses `--header-icon-hgl` at rest, switching to `--header-icon` on hover/focus — adds a subtle highlight effect | Header |
 | Added `padding-block: 0.5em` to the header so the logo has breathing room from the top and bottom edges on desktop | Header |
-| Removed the custom blurb header layout — fandom tags, rating icons, and work titles go back to their original AO3 positions, adjusted bookmark title padding from `14ch` to `6ch` | Blurb Header Layout |
+| Fixed collection banner spacing — the `padding-block` added to the header was leaking below the collection name banner, so bottom padding is now removed via `#header:has(h2)` when a collection name is present, with the `h2` getting its own `margin-top` and `padding` instead | Collections Header |
+| Removed the custom blurb header layout — fandom tags, rating icons, and work titles go back to their original AO3 positions | Blurb Header Layout |
+| Adjusted bookmark blurb title padding from `14ch` to `6ch` so it sits right on smaller screens | Bookmark Blurb Layout |
+| Tweaked the "warning: yes" content icon `background-position` by 1px for better alignment | Icon Alignment |
 
 > Both the Normal Layout ([`CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css)) and Card Layout ([`CTH_base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_alt.css)) received the same changes.
 
