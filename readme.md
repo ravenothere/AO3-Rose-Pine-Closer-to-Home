@@ -269,7 +269,7 @@ Drop any of them into your parent chain and they just work!
 |-------------|---------|
 | Header item alignment changed from `flex-start` to `center` — logo, text, and icons are now centered in the header for a more aligned look on desktop and tablet | Header |
 | Logo color changed to match the theme using the `--header-icon-hgl` variable | Header |
-| Logo filter uses `--header-icon-hgl` at rest, switching to `--header-icon` on hover/focus — adds a subtle highlight effect | Header |
+| Logo filter uses `--header-icon-hgl` at rest, switching to `--header-icon` on hover/focus — adds a hover effect | Header |
 | Added `padding-block: 0.5em` to the header so the logo has breathing room from the top and bottom edges on desktop | Header |
 | Fixed collection banner spacing — the `padding-block` added to the header was leaking below the collection name banner, so bottom padding is now removed via `#header:has(h2)` when a collection name is present, with the `h2` getting its own `margin-top` and `padding` instead | Collections Header |
 | Removed the custom blurb header layout — fandom tags, rating icons, and work titles go back to their original AO3 positions | Blurb Header Layout |
