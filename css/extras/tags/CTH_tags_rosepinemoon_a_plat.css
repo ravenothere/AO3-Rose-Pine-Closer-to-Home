@@ -1,7 +1,7 @@
 /*============================================================
 
-         ✦✦✦ Rose Pine — Closer to Home Tags✦✦✦
-           Style A [Light Theme] — Platonic Ships
+       ✦✦✦ Rose Pine Moon — Closer to Home Tags✦✦✦
+                  Style A — Platonic Ships
 
 ==============================================================
 GLOBAL VARIABLES
@@ -13,12 +13,12 @@ https://greasyfork.org/en/scripts/562812-ao3-reorder-ship-tags
 
 :root {
   /* BACKGROUND */
-  --tag-default-bg:       #f0f8f9;
-  --tag-fandom-bg:        #d8edc2;
-  --tag-warning-bg:       #fadaae;
-  --tag-ship-bg:          #f1bab8;
-  --tag-platonic-ship-bg: #ceb6eb;
-  --tag-character-bg:     #b8d9e6;
+  --tag-default-bg:       #393757;
+  --tag-fandom-bg:        #9fad97;
+  --tag-warning-bg:       #dca65f;
+  --tag-ship-bg:          #d36588;
+  --tag-platonic-ship-bg: #a789ce;
+  --tag-character-bg:     #73a7c0;
   --tag-freeform-bg:      var(--tag-default-bg);
 }
 
