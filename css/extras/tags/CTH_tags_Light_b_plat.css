@@ -1,0 +1,80 @@
+/*============================================================
+
+         ✦✦✦ Rose Pine — Closer to Home Tags✦✦✦
+          Style B [Light Theme] — Platonic Ships
+
+==============================================================
+GLOBAL VARIABLES
+==============================================================
+NOTE: This version contains a seperate tag color for platonic ships. It is recommended that you use this with the Reorder Ship Tags userscript. 
+https://greasyfork.org/en/scripts/562812-ao3-reorder-ship-tags
+
+/*>========== TAG COLORS ==========<*/
+
+:root {
+
+  /* BACKGROUND */
+  --tag-default-bg:       #f0f8f9;
+  --tag-fandom-bg:        #d8edc2;
+  --tag-warning-bg:       #fadaae;
+  --tag-ship-bg:          #f1bab8;
+  --tag-platonic-ship-bg: #ceb6eb;
+  --tag-character-bg:     #b8d9e6;
+  --tag-freeform-bg:      var(--tag-default-bg);
+
+  /* TEXT */
+  --tag-default-txt:      #2a5c63;
+  --tag-fandom-txt:       #3a5e1f;
+  --tag-warning-txt:      #7a4a05;
+  --tag-ship-txt:         #6e2220;
+  --tag-platonic-ship-txt:#3e2060;
+  --tag-character-txt:    #1d4f61;
+  --tag-freeform-txt:     var(--tag-default-txt);
+
+}
+
+/*>========== STYLE OVERRIDES ==========<*/
+
+a.tag:not(.fandom.index.group a.tag):not(h2.heading a.tag):not(.splash .favorite a.tag):not(.splash .favorite li:nth-of-type(2n+1) a.tag):hover,
+.added.tag:hover,
+.unwrangled:hover,
+.tags a[data-remote="true"]:hover {
+    color: var(--tag-default-txt) !important;
+}
+
+h5.fandoms.heading a.tag:not(.fandom.index.group a.tag):not(h2.heading a.tag):not(.splash .favorite a.tag):not(.splash .favorite li:nth-of-type(2n+1) a.tag):hover,
+dd.fandom.tags a.tag:not(.fandom.index.group a.tag):not(h2.heading a.tag):not(.splash .favorite a.tag):not(.splash .favorite li:nth-of-type(2n+1) a.tag):hover {
+    color: var(--tag-fandom-txt) !important;
+}
+
+[class^=warning] a.tag:not(.fandom.index.group a.tag):not(h2.heading a.tag):not(.splash .favorite a.tag):not(.splash .favorite li:nth-of-type(2n+1) a.tag):hover {
+    color: var(--tag-warning-txt) !important;
+}
+
+[class^=relationship] a.tag:not(.fandom.index.group a.tag):not(h2.heading a.tag):not(.splash .favorite a.tag):not(.splash .favorite li:nth-of-type(2n+1) a.tag):hover {
+    color: var(--tag-ship-txt) !important;
+}
+
+/* Special styling for platonic ships containing "*a* " */
+li.relationships:has(a[href*="%20*a*%20"]) a.tag,
+[class^="relationship"] a[href*="%20*a*%20"],
+[class^="relationship"] a[href^="/tags/Other%20Relationship%20Tags%20to%20Be%20Added"]{
+  background: var(--tag-platonic-ship-bg) !important;
+  color: var(--tag-platonic-ship-txt) !important;
+}
+
+[class^=character] a.tag:not(.fandom.index.group a.tag):not(h2.heading a.tag):not(.splash .favorite a.tag):not(.splash .favorite li:nth-of-type(2n+1) a.tag):hover {
+    color: var(--tag-character-txt) !important;
+}
+
+.delete a,
+span.delete,
+span.delete a {
+  color: var(--tag-default-txt);
+}
+
+.delete a:hover,
+span.delete:hover,
+span.delete a:hover {
+  color: var(--tag-default-txt) !important;
+}
