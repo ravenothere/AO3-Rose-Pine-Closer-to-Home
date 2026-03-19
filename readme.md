@@ -153,7 +153,9 @@ Want a different tag style? This optional add-on changes how tags appear through
 
 <details>
 <summary><b>Fonts</b></summary>
-
+   
+***Fonts:** This skin uses [Apfel Grotezk](https://www.collletttivo.it/typefaces/apfel-grotezk) (sans-serif) for body text, [Apfel Grotezk Fett](https://www.collletttivo.it/typefaces/apfel-grotezk) (sans-serif) for headings, and [Domine](https://fonts.google.com/specimen/Domine) as the works/reader font. Code snippets use [Victor Mono](https://rubjo.github.io/victor-mono/). If you want the cursive variant of the code font, remove the comments from `/* font-style: italic; */` in your theme file. [Merriweather](https://fonts.google.com/specimen/Merriweather) (serif) and [Figtree](https://fonts.google.com/specimen/Figtree) (sans-serif) also pair well with the skin if you fancy something different.*
+   
 To change fonts, open your theme skin and use Ctrl+F to search for `font-family`. You'll find four blocks — one for the main site font, one for headings, one for code, and one for works. Replace the first font name in each with your preferred font, keeping the fallbacks:
 
 ```css
@@ -237,7 +239,7 @@ Recommended to use alongside [AO3: Reorder Ship Tags](https://greasyfork.org/en/
 <details>
 <summary><b>Original Rosé Pine colors</b></summary>
 
-Prefer the original Rosé Pine color palette? You can use one of these theme skins instead of the Closer to Home ones when following the installation steps — everything else stays the same:
+prefer the original Rosé Pine color palette? you can swap in one of these theme skins instead of my Closer to Home ones — everything else in the installation steps stays the same.
 
 - [Rosé Pine Dawn](https://github.com/Wolfbatcat/ao3-rose-pine/blob/main/css/extras/cth/theme_rosepinedawn_cth.css)
 - [Rosé Pine Moon](https://github.com/Wolfbatcat/ao3-rose-pine/blob/main/css/extras/cth/theme_rosepinemoon_cth.css)
@@ -245,6 +247,7 @@ Prefer the original Rosé Pine color palette? You can use one of these theme ski
 - [Rosé Pine](https://github.com/Wolfbatcat/ao3-rose-pine/blob/main/css/extras/cth/theme_rosepine_cth.css)
 - [Rosé Pine Cool](https://github.com/Wolfbatcat/ao3-rose-pine/blob/main/css/extras/cth/theme_rosepinecool_cth.css)
 
+here are also the original [Rosé Pine alternative tags](https://github.com/Wolfbatcat/ao3-rose-pine/tree/main/css/extras/tags) if you're using the alternative tag style.
 </details>
 
 ---
