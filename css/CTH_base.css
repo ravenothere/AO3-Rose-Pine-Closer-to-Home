@@ -1439,9 +1439,9 @@ fieldset.actions li:not(:first-child) {
 .download .secondary {
     top: unset;
     right: unset;
-    left: 50%;
+    left: unset;
     width: fit-content;
-    transform: translate(-50%, 2.6em);
+    transform: none;
 }
 
 .chapter .secondary a {
