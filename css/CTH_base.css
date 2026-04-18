@@ -3870,8 +3870,8 @@ dl.stats dd {
 }
 
 /* transparent chart background */
-svg>rect {
-    filter: opacity(0)
+#stat_chart svg>rect {
+    display: none;
 }
 
 /*>>========== WORK TITLE AND STATS LAYOUT ==========<<*/
@@ -4030,4 +4030,21 @@ input[type="range"]::-moz-range-thumb {
 input[type="checkbox"]:checked+[class*="toggle-slider"],
 input[type="checkbox"]:checked+[class*="toggle-track"] {
     background-color: var(--link-visited) !important;
+}
+
+/*>========== "Comment Formatting and Preview" userscript ==========<*/
+/* https://greasyfork.org/en/scripts/484002-ao3-comment-formatting-and-preview */
+
+/* styling the preview box */
+div.fmtPreview.userstuff {
+  margin-top: 0.429em;
+  padding: 2px !important;
+  border: 1.5px dotted var(--border2) !important;
+  border-radius: var(--radius-small);
+  background: transparent;
+}
+
+/* display code inline */
+div.fmtPreview.userstuff p code {
+  display: inline;
 }
