@@ -15,7 +15,7 @@ If you're curious about the full list of differences, <a href="https://github.co
 
 <p>Before you begin, decide which layout you prefer:</p><ul>
 <li><strong>Normal Layout:</strong> Uses <code>CTH_base.css</code>, <code>CTH_tablet.css</code>, and <code>CTH_mobile.css</code></li>
-<li><strong>Card Layout:</strong> Uses <code>CTH_base_alt.css</code>, <code>CTH_tablet_alt.css</code>, and <code>CTH_mobile_alt.css</code></li>
+<li><strong>Card Layout:</strong> Uses <code>CTH_base_card.css</code>, <code>CTH_tablet_card.css</code>, and <code>CTH_mobile_card.css</code></li>
 </ul>
 
 <p>Check the <a href="#previews" rel="nofollow">previews</a> above to see which style you prefer. Both layouts use the same theme files, so you can pick any theme color regardless of which layout you choose.</p><h3>1. Create the Base Skin</h3><ul>
@@ -24,7 +24,7 @@ If you're curious about the full list of differences, <a href="https://github.co
 <li>Paste the contents of your chosen base file into the CSS field:
 <ul>
 <li><strong>Normal Layout:</strong> <a href="https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css" rel="nofollow">CTH_base.css</a></li>
-<li><strong>Card Layout:</strong> <a href="https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_alt.css" rel="nofollow">CTH_base_alt.css</a></li>
+<li><strong>Card Layout:</strong> <a href="https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_card.css" rel="nofollow">CTH_base_card.css</a></li>
 </ul>
 </li>
 <li>Under <strong>Advanced</strong>, set it to <strong>Parent Only</strong>.</li>
@@ -69,7 +69,7 @@ If you're curious about the full list of differences, <a href="https://github.co
 <li>Paste the correct tablet file for your layout:
 <ul>
 <li><strong>Normal Layout:</strong> <a href="https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet.css" rel="nofollow">CTH_tablet.css</a></li>
-<li><strong>Card Layout:</strong> <a href="https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_alt.css" rel="nofollow">CTH_tablet_alt.css</a></li>
+<li><strong>Card Layout:</strong> <a href="https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_card.css" rel="nofollow">CTH_tablet_card.css</a></li>
 </ul>
 </li>
 <li>Under <strong>Advanced → Choose @media</strong>, select <code>only screen (max-width: 62em)</code>.</li>
@@ -79,7 +79,7 @@ If you're curious about the full list of differences, <a href="https://github.co
 <li>Paste the correct mobile file for your layout:
 <ul>
 <li><strong>Normal Layout:</strong> <a href="https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile.css" rel="nofollow">CTH_mobile.css</a></li>
-<li><strong>Card Layout:</strong> <a href="https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_alt.css" rel="nofollow">CTH_mobile_alt.css</a></li>
+<li><strong>Card Layout:</strong> <a href="https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_card.css" rel="nofollow">CTH_mobile_card.css</a></li>
 </ul>
 </li>
 <li>Under <strong>Advanced → Choose @media</strong>, select <code>only screen (max-width: 42em)</code>.</li>
@@ -105,13 +105,13 @@ If you're curious about the full list of differences, <a href="https://github.co
 
 <p><em><small>This skin uses <a href="https://www.collletttivo.it/typefaces/apfel-grotezk" rel="nofollow">Apfel Grotezk</a> (sans-serif) for body text, <a href="https://www.collletttivo.it/typefaces/apfel-grotezk" rel="nofollow">Apfel Grotezk Fett</a> (sans-serif) for headings, and <a href="https://fonts.google.com/specimen/Domine" rel="nofollow">Domine</a> as the works/reader font. Code snippets use <a href="https://rubjo.github.io/victor-mono/" rel="nofollow">Victor Mono</a>. If you want the cursive variant of the code font, remove the comments from <code>/* font-style: italic; */</code> in your theme file. <a href="https://fonts.google.com/specimen/Merriweather" rel="nofollow">Merriweather</a> (serif) and <a href="https://fonts.google.com/specimen/Figtree" rel="nofollow">Figtree</a> (sans-serif) also pair well with the skin if you fancy something different.</small></em></p>
 
-<p>To change the font, open your theme skin and press <kbd>Ctrl+F</kbd> to search for <code>font-family</code>. You'll find four blocks — one for the main site font, one for headings, one for code, and one for works. Replace the first font name in each with your preferred font, keeping the fallbacks:</p>
+<p>To change the font, open your base skin and press <kbd>Ctrl+F</kbd> to search for <code>font-family</code>. You'll find four blocks — one for the main site font, one for headings, one for code, and one for works. Replace the first font name in each with your preferred font, keeping the fallbacks:</p>
 
 <pre><code>font-family: YourFont, Apfel Grotezk, Figtree, Bitter, Helvetica, Arial, sans-serif;</code></pre><p><strong>Important:</strong> The font must be installed on your device to display. If it isn't, the browser will fall back to the next one in the list.</p>
 
 <p><strong>On mobile:</strong> AO3 can only display fonts installed on your device. The recommended approach on Android is to use the <a href="https://addons.mozilla.org/en-US/firefox/addon/styl-us/" rel="nofollow">Stylus</a> extension on Firefox — it can load fonts directly without needing them installed system-wide. The <a href="https://userstyles.world/style/26908/ao3-rose-pine-fonts" rel="nofollow">AO3: Rosé Pine Fonts</a> userstyle has the fonts for this skin ready to go. If you want to use custom fonts on mobile, see my <a href="https://github.com/ravenothere/AO3-Tweaks/tree/main?tab=readme-ov-file#custom-fonts-for-mobile" rel="nofollow">Custom Fonts for Mobile</a> guide.</p></details><details><summary><b>Text Size</b></summary>
 
-<p>In your theme skin, find these two variables near the top:</p>
+<p>In your base skin, find these two variables near the top:</p>
 
 <pre><code>--txt-size-main: 110%;   /* main text size */
 --txt-size-work: 115%;   /* work text size */</code></pre><p><code>--txt-size-main</code> controls text across the whole site (navigation, blurbs, forms, etc.), while <code>--txt-size-work</code> is just for work content. Increase the percentage for larger text or decrease for smaller. Going above <code>130%</code> for <code>--txt-size-main</code> may cause minor layout issues.</p></details><details><summary><b>Tag Colors</b></summary>
@@ -169,7 +169,22 @@ If you're curious about the full list of differences, <a href="https://github.co
 <li><a href="https://github.com/Wolfbatcat/ao3-rose-pine/blob/main/css/extras/cth/theme_rosepinecool_cth.css" rel="nofollow">Rosé Pine Cool</a></li>
 </ul>
 
-<p><em>here are also the <a href="https://github.com/Wolfbatcat/ao3-rose-pine/tree/main/css/extras/tags" rel="nofollow">original Rosé Pine alternative tags</a> if you're using the alternative tag style.</em></p></details><hr><h2 align="center">More Add-ons</h2><hr>
+<p><em>here are also the <a href="https://github.com/Wolfbatcat/ao3-rose-pine/tree/main/css/extras/tags" rel="nofollow">original Rosé Pine alternative tags</a> if you're using the alternative tag style.</em></p></details><details><summary><b>Text Decorations</b></summary>
+
+<p>This skin removes all text decorations from the <a href="https://archiveofourown.org/works/69993411" rel="nofollow">original Rosé Pine</a> by default (the ✿ symbols on heading titles, dashboard tabs, freeform tags, etc.). You can add them back with the optional Text Decorations add-on.</p><ul>
+<li><a href="https://archiveofourown.org/skins/new?skin_type=Skin" rel="nofollow">Create a skin</a> named <code>[XYZ] Rosé Pine CTH - Text Decorations</code>.</li>
+<li>Paste the contents of <a href="https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/extras/CTH_text_decorations.css" rel="nofollow">CTH_text_decorations.css</a>.</li>
+<li>Set to <strong>Parent Only</strong> and submit.</li>
+<li>Add it to your parent chain in Step 5, after your theme skin (or after the tag mod skin if you're using one).</li>
+</ul><blockquote>
+
+<p>You can also swap out ✦ in the code for whatever symbol you want (♥, ✿, ʚ, etc.).</p></blockquote></details><details><summary><b>Layout Toggles</b></summary>
+
+<p>A few optional display settings are available in the <code>LAYOUT TOGGLES</code> section near the top of your base skin. To change them, find the variable and update its value:</p><ul>
+<li><strong>Profile picture in the header:</strong> Your user avatar can be shown next to the header icons. Change <code>--greeting-icon-display: none;</code> to <code>--greeting-icon-display: flex;</code></li>
+<li><strong>Social share buttons on the homepage:</strong> AO3's social media share buttons on the splash page are hidden by default. Change <code>--splash-social-display: none;</code> to <code>--splash-social-display: inline;</code></li>
+<li><strong>Footer:</strong> The footer is shown by default. Change <code>--footer-display: inline;</code> to <code>--footer-display: none;</code> to hide it.</li>
+</ul></details><hr><h2 align="center">More Add-ons</h2><hr>
 
 <p>Want to take things further? Check out my <strong><a href="https://archiveofourown.org/works/80873616" rel="nofollow">AO3 Tweaks</a></strong> — a collection of standalone add-ons that work with any AO3 skin, including this one:</p><ul>
 <li><strong><a href="https://archiveofourown.org/works/80873616#lgbt-tags" rel="nofollow">LGBTQ+ color coded tags</a></strong> — highlights LGBTQ+ related tags with their corresponding pride flag colors</li>

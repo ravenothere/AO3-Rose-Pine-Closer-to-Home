@@ -1,0 +1,54 @@
+.site-skin-metadata {
+content:
+"
+============================================================
+
+         ✦✦✦ Rosé Pine — Closer to Home Tags ✦✦✦
+                      Text Decorations
+
+==============================================================
+SKIN METADATA
+==============================================================
+
+  - Skin:         Rosé Pine — Closer to Home
+  - Add-on:       Text Decorations
+  - File:         CTH_text_decorations.css
+  - Author:       ravenothere
+  - Tumblr:       ravenothere
+  - License:      MIT
+  - Updated:      2026-04-28
+
+  - Repository:   https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home
+  - Instructions: https://archiveofourown.org/works/80768621
+
+  - Original Skin:'Rosé Pine' by Blackbatcat          https://github.com/Wolfbatcat/ao3-rose-pine
+
+  - Base:         'neos' by ZerafinaCSS               https://archiveofourown.org/works/65849527
+
+  - Inspired by:  'Archive 2.0 skin' by AO3           https://archiveofourown.org/skins/873
+                  'Tide' by ElectricAlice             https://github.com/electricalice/Ao3-tide
+                  'Flat Squares Skin' by milkfatzero  https://ao3-skins.dreamwidth.org/6156.html
+
+============================================================";
+}
+
+/*>========== TEXT DECORATIONS ==========<*/
+
+/* HEADING DECORATIONS */
+#dashboard .current:after,
+.home .header h2::after,
+.splash>.module h3::after {
+    content: "\00a0✦";
+}
+
+/* TAG DECORATIONS */
+a.tag:not(.fandom.index.group a.tag,
+    h2.heading a.tag,
+    .splash .favorite a.tag,
+    h5.fandoms.heading a.tag,
+    dd.fandom.tags a,
+    [class^=warning] a.tag,
+    [class^=relationship] a,
+    [class^=character] a.tag):after {
+    content: "\00a0\00a0✦";
+}

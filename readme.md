@@ -50,7 +50,7 @@ This fork restores some of the default AO3 interface aesthetics, bringing back a
 Before you begin, decide which layout you prefer:
 
 - **Normal Layout:** Uses [`CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css), [`CTH_tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet.css), and [`CTH_mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile.css)
-- **Card Layout:** Uses [`CTH_base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_alt.css), [`CTH_tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_alt.css), and [`CTH_mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_alt.css)
+- **Card Layout:** Uses [`CTH_base_card.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_card.css), [`CTH_tablet_card.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_card.css), and [`CTH_mobile_card.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_card.css)
 
 Check the [previews above](#preview) to see which style you prefer, then follow the instructions below using the files for your chosen layout. Note that both layouts use the same theme files, so you can pick any theme you like regardless of which layout you choose.
 
@@ -61,7 +61,7 @@ Check the [previews above](#preview) to see which style you prefer, then follow 
 2. Name it `[XYZ] Rosé Pine CTH - Base` — Replace `XYZ` with your username or initials.
 3. Paste the contents of your chosen base file:
    - Normal layout → [`css/CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css)
-   - Card layout → [`css/CTH_base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_alt.css)
+   - Card layout → [`css/CTH_base_card.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_card.css)
 4. Under **Advanced**, set to **Parent Only**
 5. Click **Submit**
 
@@ -113,7 +113,7 @@ Want a different tag style? This optional add-on changes how tags appear through
 1. Create a skin named `[XYZ] Rosé Pine CTH - Tablet`
 2. Paste the contents of your chosen tablet file:
    - Normal layout → [`css/CTH_tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet.css)
-   - Card layout → [`css/CTH_tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_alt.css)
+   - Card layout → [`css/CTH_tablet_card.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_card.css)
 3. Under **Advanced → Choose @media**, select `only screen (max-width: 62em)`
 4. Set to **Parent Only** and submit
 
@@ -125,7 +125,7 @@ Want a different tag style? This optional add-on changes how tags appear through
 1. Create a skin named `[XYZ] Rosé Pine CTH - Mobile`
 2. Paste the contents of your chosen mobile file:
    - Normal layout → [`css/CTH_mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile.css)
-   - Card layout → [`css/CTH_mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_alt.css)
+   - Card layout → [`css/CTH_mobile_card.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_card.css)
 3. Under **Advanced → Choose @media**, select `only screen (max-width: 42em)`
 4. Set to **Parent Only** and submit
 
@@ -156,7 +156,7 @@ Want a different tag style? This optional add-on changes how tags appear through
    
 ***Fonts:** This skin uses [Apfel Grotezk](https://www.collletttivo.it/typefaces/apfel-grotezk) (sans-serif) for body text, [Apfel Grotezk Fett](https://www.collletttivo.it/typefaces/apfel-grotezk) (sans-serif) for headings, and [Domine](https://fonts.google.com/specimen/Domine) as the works/reader font. Code snippets use [Victor Mono](https://rubjo.github.io/victor-mono/). If you want the cursive variant of the code font, remove the comments from `/* font-style: italic; */` in your theme file. [Merriweather](https://fonts.google.com/specimen/Merriweather) (serif) and [Figtree](https://fonts.google.com/specimen/Figtree) (sans-serif) also pair well with the skin if you fancy something different.*
    
-To change fonts, open your theme skin and use Ctrl+F to search for `font-family`. You'll find four blocks — one for the main site font, one for headings, one for code, and one for works. Replace the first font name in each with your preferred font, keeping the fallbacks:
+To change fonts, open your base skin and use Ctrl+F to search for `font-family`. You'll find four blocks — one for the main site font, one for headings, one for code, and one for works. Replace the first font name in each with your preferred font, keeping the fallbacks:
 
 ```css
 font-family: YourFont, Apfel Grotezk, Figtree, Bitter, Helvetica, Arial, sans-serif;
@@ -171,7 +171,7 @@ font-family: YourFont, Apfel Grotezk, Figtree, Bitter, Helvetica, Arial, sans-se
 <details>
 <summary><b>Font size</b></summary>
 
-In your theme skin, find these two variables near the top:
+In your base skin, find these two variables near the top:
 
 ```css
 --txt-size-main: 110%;   /* main text size */
@@ -250,6 +250,31 @@ prefer the original Rosé Pine color palette? you can swap in one of these theme
 here are also the original [Rosé Pine alternative tags](https://github.com/Wolfbatcat/ao3-rose-pine/tree/main/css/extras/tags) if you're using the alternative tag style.
 </details>
 
+<details>
+<summary><b>Text Decorations</b></summary>
+
+This skin removes all text decorations from the original Rosé Pine by default (the `✿` symbols on heading titles, dashboard tabs, section headings, and freeform tags). You can add them back with the optional Text Decorations add-on.
+ 
+1. Create a skin named `[XYZ] Rosé Pine CTH - Text Decorations`
+2. Paste the contents of [`css/extras/CTH_text_decorations.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/extras/CTH_text_decorations.css)
+3. Set to **Parent Only** and submit
+4. Add it to your parent chain in Step 5, after your theme skin (or after the tag mod skin if you're using one)
+
+> you can  Swap out ✦ in the code for whatever symbol you want (♥, ✿, ʚ, etc.).
+
+</details>
+
+<details>
+<summary><b>Layout Toggles</b></summary>
+
+A few optional display settings are available in the `LAYOUT TOGGLES` section near the top of your base skin. To change them, find the variable and update its value:
+
+- **Profile picture in the header:** Your user avatar can be shown next to the header icons. Change `--greeting-icon-display: none;` to `--greeting-icon-display: flex;`
+- **Social share buttons on the homepage:** AO3's social media share buttons on the splash page are hidden by default. Change `--splash-social-display: none;` to `--splash-social-display: inline;`
+- **Footer:** The footer is shown by default. Change `--footer-display: inline;` to `--footer-display: none;` to hide it.
+
+</details>
+
 ---
 
 ## More Add-ons
@@ -266,10 +291,14 @@ Drop any of them into your parent chain and they just work!
 
 ## What's Different
 
-### [`CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css) & [`CTH_base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_alt.css)
+### [`CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css) & [`CTH_base_card.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_card.css)
 
 | What changed | Section |
 |-------------|---------|
+| Content icon border radius changed from `0.75rem` (fully round) to `0.25rem` (round-edged square, closer to default AO3) | Icon Border Radius |
+| Main text size bumped from `100%` to `110%`, work text size from `110%` to `115%` — slightly larger to compensate for the custom font rendering smaller | Text Size |
+| Changed the fonts and added work fonts — check out the [Customization](#customization) section to add your own | Fonts |
+| Removed all text decorations (✿ in header title, dashboard tab, section headings, and freeform tags — can be added as an add-on in [customization](#customization)) | Text Decorations |
 | Header item alignment changed from `flex-start` to `center` — logo, text, and icons are now centered in the header for a more aligned look on desktop and tablet | Header |
 | Logo color changed to match the theme using the `--header-icon-hgl` variable | Header |
 | Logo filter uses `--header-icon-hgl` at rest, switching to `--header-icon` on hover/focus — adds a hover effect | Header |
@@ -279,7 +308,7 @@ Drop any of them into your parent chain and they just work!
 | Adjusted bookmark blurb title padding from `14ch` to `6ch` so it sits right on smaller screens | Bookmark Blurb Layout |
 | Tweaked the "warning: yes" content icon `background-position` by 1px for better alignment | Icon Alignment |
 
-> Both the Normal Layout ([`CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css)) and Card Layout ([`CTH_base_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_alt.css)) received the same changes.
+> Both the Normal Layout ([`CTH_base.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base.css)) and Card Layout ([`CTH_base_card.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_base_card.css)) received the same changes.
 
 ---
 
@@ -287,18 +316,14 @@ Drop any of them into your parent chain and they just work!
 
 | What changed | Section |
 |-------------|---------|
-| Content icon border radius changed from `0.75rem` (fully round) to `0.25rem` (round-edged square, closer to default AO3) | Icon Border Radius |
-| Main text size bumped from `100%` to `110%`, work text size from `110%` to `115%` — slightly larger to compensate for the custom font rendering smaller | Text Size |
 | All content icon colors replaced with pastel tones closer to the default AO3 palette | Icon Colors |
 | Tag background colors changed to softer pastels for easier readability | Tag Colors |
-| Changed the fonts and added work fonts — check out the [Customization](#customization) section to add your own | Fonts |
-| Removed all text decorations (✿ in header title, dashboard tab, section headings, and freeform tags) | Text Decorations |
 
 > All three theme files received the same changes. [`CTH_theme_rosepinedawn.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_theme_rosepinedawn.css) additionally has explicit tag text colors set to `#464261` for better readability on the light background.
 
 ---
 
-### [`CTH_mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile.css) & [`CTH_mobile_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_alt.css)
+### [`CTH_mobile.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile.css) & [`CTH_mobile_card.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_mobile_card.css)
 
 | What changed | Section |
 |-------------|---------|
@@ -307,7 +332,7 @@ Drop any of them into your parent chain and they just work!
 
 ---
 
-### [`CTH_tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet.css) & [`CTH_tablet_alt.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_alt.css)
+### [`CTH_tablet.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet.css) & [`CTH_tablet_card.css`](https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home/blob/main/css/CTH_tablet_card.css)
 
 | What changed | Section |
 |-------------|---------|

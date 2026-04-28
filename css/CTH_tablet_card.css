@@ -11,8 +11,8 @@ content:
 SKIN METADATA
 ==============================================================
 
-  - Skin:         Rosé Pine — Closer to Home (Normal Layout — Tablet)
-  - File:         CTH_tablet.css
+  - Skin:         Rosé Pine — Closer to Home (Card Layout — Tablet)
+  - File:         CTH_tablet_card.css
   - Author:       ravenothere
   - Tumblr:       ravenothere
   - License:      MIT
@@ -46,7 +46,6 @@ SKIN METADATA
 >> 03 REGION: HEADER
 ============================================================*/
 
-/* Override base header padding */
 #header {
   padding-block: 0;
 }
@@ -77,15 +76,14 @@ SKIN METADATA
 #dashboard.own {
   top: unset;
   z-index: 2;
-  width: 100%;
+  width: auto;
   min-width: unset;
   max-width: unset;
   height: auto;
   max-height: unset;
   overflow: visible;
-  margin: 0;
+  margin: 2% 2% 0 2%;
   padding: 0;
-  border-right: none;
   border-bottom: var(--border-width) solid;
   text-align: center;
 }
@@ -94,7 +92,7 @@ SKIN METADATA
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 0.25em var(--margins-narrow);
+  padding: 0.25em 0;
   text-align: center;
 }
 
