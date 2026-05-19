@@ -114,7 +114,11 @@ If you're curious about the full list of differences, <a href="https://github.co
 <p>In your base skin, find these two variables near the top:</p>
 
 <pre><code>--txt-size-main: 110%;   /* main text size */
---txt-size-work: 115%;   /* work text size */</code></pre><p><code>--txt-size-main</code> controls text across the whole site (navigation, blurbs, forms, etc.), while <code>--txt-size-work</code> is just for work content. Increase the percentage for larger text or decrease for smaller. Going above <code>130%</code> for <code>--txt-size-main</code> may cause minor layout issues.</p></details><details><summary><b>Tag Colors</b></summary>
+--txt-size-work: 115%;   /* work text size */</code></pre><p><code>--txt-size-main</code> controls text across the whole site (navigation, blurbs, forms, etc.), while <code>--txt-size-work</code> is just for work content. Increase the percentage for larger text or decrease for smaller. Going above <code>130%</code> for <code>--txt-size-main</code> may cause minor layout issues.</p></details><details><summary><b>Work Width</b></summary>
+
+<p>You can adjust the maximum width of the workskin in the base skin:</p>
+
+<pre><code></code></pre><pre><code>--workskin-width:      45em;     /* max width of work content on desktop */</code></pre><p>Increase it for a wider reading column (like <code>90em</code>) or decrease it for a narrower one (like <code>40em</code>). On tablet and mobile the work area always fills the available width regardless of this setting.</p></details><details><summary><b>Tag Colors</b></summary>
 
 <p>Want to change up the tag colors? The variables are in the <code>TAG COLORS</code> section near the top of your theme file:</p>
 

@@ -16,7 +16,7 @@ SKIN METADATA
   - Author:       ravenothere
   - Tumblr:       ravenothere
   - License:      MIT
-  - Updated:      2026-04-30
+  - Updated:      2026-05-19
 
   - Repository:   https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home
   - Instructions: https://archiveofourown.org/works/80768621
@@ -78,6 +78,7 @@ Alphanumeric = Additions by ZerafinaCSS and other contributors
   --margins-header:      1rem;                /* header on desktop */
   --margins-main:        5%;                  /* site contents on desktop */
   --margins-narrow:      2.5%;                /* site contents and header on tablet/mobile */
+  --workskin-width:      45em;               /* max width of work content on desktop */
 
   /* BLURB PADDING */
   --blurb-padding: 0.75em;
@@ -2564,7 +2565,7 @@ li.comment:not(:has(.edit_comment)) {
 .comment img.icon,
 .comment span.icon,
 .comment div.icon>a {
-    border-radius: 50%;
+    border-radius: var(--icon-primary-radius);
     transition: border-radius 150ms linear;
 }
 
@@ -2644,13 +2645,6 @@ li.comment:not(:has(.edit_comment)) {
 
 li.comment:has(.edit_comment) {
     border: none;
-}
-
-/* limit image height in comments */
-.comment img {
-    width: 100%;
-    max-width: 750px;
-    max-height: 500px;
 }
 
 .thread .thread {
@@ -3174,12 +3168,10 @@ dl.nomination {
 /*>========== WORK MARGINS AND TEXT ==========<*/
 
 #workskin {
-    max-width: 70em;
-    /* slightly narrower than default */
+    max-width: var(--workskin-width);
     margin: 0 auto;
     padding: 0 2%;
     font-size: var(--txt-size-work);
-    /* adjust work font size here */
 }
 
 /*>========== IMAGES ==========<*/
@@ -3276,6 +3268,10 @@ div.error,
 .announcement .userstuff a:visited {
     border-bottom: 1px solid !important;
     color: inherit !important;
+}
+
+p.muted.notice {
+    display: none;
 }
 
 /*>========== ADMIN ANNOUNCEMENT BANNERS ==========<*/
@@ -4220,7 +4216,6 @@ div.fmtPreview.userstuff p code {
 /*>========== USERSCRIPT: AO3 FICTRACKER STYLING ==========<*/
 /* https://greasyfork.org/en/scripts/513435-ao3-fictracker */
 
-/* inline header wrapper styling */
 li.blurb #header.region {
     display: inline-flex !important;
     align-items: baseline !important;
@@ -4239,7 +4234,25 @@ li.blurb #header.region>ul.navigation.actions>li.dropdown {
     color: var(--txt-main) !important;
 }
 
-/* user notes styling */
+li.blurb #header.region>ul.navigation.actions>li.dropdown::before {
+    content: none !important;
+}
+
+li.blurb #header.region>ul.navigation.actions>li.dropdown>.menu.dropdown-menu {
+    z-index: 9999 !important;
+    box-sizing: border-box !important;
+    width: max-content !important;
+    min-width: 15em !important;
+    padding: 0.25em 0 !important;
+    border: 1px solid var(--border3) !important;
+    border-radius: var(--radius-mid) !important;
+    box-shadow: var(--shadow) !important;
+    background: var(--bg6) !important;
+    font-size: 0.95em !important;
+    left: auto !important;
+    right: 0 !important;
+}
+
 .create-note-btn {
     border-radius: 8px !important;
 }
@@ -4254,7 +4267,6 @@ li.blurb #header.region>ul.navigation.actions>li.dropdown {
     box-shadow: var(--shadow-box2) !important;
 }
 
-/* remove border when note exists */
 .user-note-preview>div>div:has(details) {
     border: none !important;
     border-radius: 0 !important;
