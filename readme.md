@@ -169,7 +169,7 @@ font-family: YourFont, Apfel Grotezk, Figtree, Bitter, Helvetica, Arial, sans-se
 </details>
 
 <details>
-<summary><b>Font size</b></summary>
+<summary><b>Font Size</b></summary>
 
 In your base skin, find these two variables near the top:
 
@@ -183,7 +183,18 @@ In your base skin, find these two variables near the top:
 </details>
 
 <details>
-<summary><b>Tag colors</b></summary>
+<summary><b>Work Width</b></summary>
+
+You can adjust the maximum width of the workskin in the base skin:
+
+`--workskin-width:      45em;     /* max width of work content on desktop */`
+
+Increase it for a wider reading column (like `90em`) or decrease it for a narrower one (like `40em`). On tablet and mobile the work area always fills the available width regardless of this setting.
+
+</details>
+
+<details>
+<summary><b>Tag Colors</b></summary>
 
 Want to change up the tag colors? The variables are in the `TAG COLORS` section near the top of your theme file:
 
@@ -217,7 +228,7 @@ Just swap out the hex color values with whatever you like. You can also tweak th
 </details>
 
 <details>
-<summary><b>Platonic ship tags</b></summary>
+<summary><b>Platonic Ship Tags</b></summary>
 
 Want platonic ships (relationships with the `&` symbol) to stand out with their own color? Here are pre-made add-on skins with the distinction already built in:
 
@@ -237,7 +248,7 @@ Recommended to use alongside [AO3: Reorder Ship Tags](https://greasyfork.org/en/
 </details>
 
 <details>
-<summary><b>Original Rosé Pine colors</b></summary>
+<summary><b>Original Rosé Pine Palett</b></summary>
 
 prefer the original Rosé Pine color palette? you can swap in one of these theme skins instead of my Closer to Home ones — everything else in the installation steps stays the same.
 
