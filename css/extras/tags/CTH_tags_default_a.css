@@ -1,0 +1,145 @@
+.site-skin-metadata {
+content:
+"
+============================================================
+
+         ✦✦✦ Rosé Piné — Closer to Home Tags ✦✦✦
+                     Default AO3 Style
+
+==============================================================
+SKIN METADATA
+==============================================================
+
+  - Skin:         Rosé Pine — Closer to Home
+  - Add-on:       Tags - Default AO3 Style
+  - File:         CTH_tags_default_a.css
+  - Author:       ravenothere
+  - Tumblr:       ravenothere
+  - License:      MIT
+  - Updated:      2026-06-06
+
+  - Repository:   https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home
+  - Instructions: https://archiveofourown.org/works/80768621
+
+============================================================";
+}
+
+a.tag:not(.fandom.index.group a.tag):not(h2.heading a.tag):not(.splash .favorite a.tag):not(.splash .favorite li:nth-of-type(2n+1) a.tag),
+.tags a[data-remote="true"],
+.unwrangled,
+.added.tag {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+    border: none;
+    border-radius: 0;
+    font-size: inherit;
+    position: static;
+    z-index: auto;
+    transition: none;
+    text-decoration: underline dotted;
+    background-color: transparent;
+    color: inherit;
+}
+
+a.tag:not(.fandom.index.group a.tag, h2.heading a.tag, .splash .favorite a.tag)::before,
+.tags a[data-remote="true"]::before,
+.added.tag::before,
+h5.fandoms.heading a.tag::before,
+dd.fandom.tags a::before,
+[class^=warning] a.tag::before,
+[class^=relationship] a.tag::before,
+[class^=character] a.tag::before,
+.unwrangled::before {
+    content: none;
+    display: none;
+}
+
+.unwrangled { border: none; }
+
+.commas:has(.tag) li { padding: inherit; }
+.commas:has(.tag, a[data-remote="true"]) li::after { content: ", "; }
+
+a.tag:hover { background: inherit; }
+
+a.tag:not(.fandom.index.group a.tag):not(h2.heading a.tag):not(.splash .favorite a.tag):not(.splash .favorite li:nth-of-type(2n+1) a.tag):hover,
+.added.tag:hover,
+.unwrangled:hover,
+.tags a[data-remote="true"]:hover,
+h5.fandoms.heading a.tag:hover,
+dd.fandom.tags a:hover,
+[class^=warning] a.tag:hover,
+[class^=relationship] a.tag:hover,
+[class^=character] a.tag:hover,
+[class^=freeform] a.tag:hover {
+    color: var(--tag-hgl-txt) !important;
+    filter: var(--tag-filter);
+    box-shadow: var(--tag-hsl-shadow);
+    transform: none;
+    text-decoration: underline dotted;
+}
+
+a.tag:hover::before,
+[class^=warning] a.tag:hover::before,
+[class^=relationship] a.tag:hover::before,
+[class^=character] a.tag:hover::before,
+[class^=freeform] a.tag:hover::before,
+h5.fandoms.heading a.tag:hover::before,
+dd.fandom.tags a:hover::before,
+.tags a[data-remote="true"]:hover::before {
+    content: none;
+    display: none;
+}
+
+h5.fandoms.heading {
+    letter-spacing: normal;
+    color: inherit;
+    font-weight: inherit;
+}
+
+h5.fandoms.heading a.tag,
+dd.fandom.tags a,
+.blurb h5.fandoms.heading a.tag,
+.blurb h5.tags.heading a.tag {
+    letter-spacing: normal;
+    margin-right: 0 !important;
+    background-color: transparent;
+    color: var(--tag-fandom-txt) !important;
+    text-decoration: underline dotted;
+}
+
+.blurb h5.fandoms.heading,
+.blurb h5.tags.heading { color: inherit; }
+
+[class^=warning] a.tag {
+    background-color: var(--tag-warning-bg) !important;
+    color: var(--tag-warning-txt) !important;
+    text-decoration: underline dotted;
+}
+
+[class^=relationship] a.tag {
+    background-color: var(--tag-ship-bg) !important;
+    color: var(--tag-ship-txt) !important;
+    text-decoration: underline dotted;
+}
+
+li.relationships:has(a[href*="%20*a*%20"]) a.tag,
+[class^="relationship"] a[href*="%20*a*%20"],
+[class^="relationship"] a[href^="/tags/Other%20Relationship%20Tags%20to%20Be%20Added"] {
+    background-color: var(--tag-platonic-ship-bg) !important;
+    color: var(--tag-platonic-ship-txt) !important;
+    text-decoration: underline dotted;
+}
+
+[class^=character] a.tag {
+    background-color: var(--tag-character-bg) !important;
+    color: var(--tag-character-txt) !important;
+    text-decoration: underline dotted;
+}
+
+[class^=freeform] a.tag {
+    background-color: var(--tag-freeform-bg) !important;
+    color: var(--tag-freeform-txt) !important;
+    text-decoration: underline dotted;
+}
