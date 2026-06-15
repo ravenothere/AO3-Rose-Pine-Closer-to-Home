@@ -203,7 +203,7 @@ GLOBAL VARIABLES
   --lock-icon:           var(--header-icon);
   --tag-filter:          brightness(1.15);
   --stats-icon:          var(--header-icon);
-  --rich-txt-content:    invert(87%) sepia(12%) saturate(152%) hue-rotate(297deg) brightness(90%) contrast(95%);
+  --rich-txt-content:    none;
 
 
 }
