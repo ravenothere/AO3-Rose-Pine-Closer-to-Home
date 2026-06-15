@@ -17,7 +17,7 @@ SKIN METADATA
   - Author:       ravenothere
   - Tumblr:       ravenothere
   - License:      MIT
-  - Updated:      2026-04-28
+  - Updated:      2026-06-15
 
   - Repository:   https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home
   - Instructions: https://archiveofourown.org/works/80768621
@@ -203,8 +203,7 @@ GLOBAL VARIABLES
   --lock-icon:           var(--header-icon);
   --tag-filter:          brightness(1.15);
   --stats-icon:          var(--header-icon);
-  --stat-chart:          saturate(45%) hue-rotate(255deg) contrast(110%) sepia(10%) brightness(110%);
-  --rich-txt-editor:     none;
+  --rich-txt-content:    invert(87%) sepia(12%) saturate(152%) hue-rotate(297deg) brightness(90%) contrast(95%);
 
 
 }
