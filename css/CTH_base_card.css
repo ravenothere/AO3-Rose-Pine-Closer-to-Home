@@ -16,7 +16,7 @@ SKIN METADATA
   - Author:       ravenothere
   - Tumblr:       ravenothere
   - License:      MIT
-  - Updated:      2026-06-15
+  - Updated:      2026-06-18
 
   - Repository:   https://github.com/ravenothere/AO3-Rose-Pine-Closer-to-Home
   - Instructions: https://archiveofourown.org/works/80768621
@@ -179,10 +179,9 @@ textarea#skin_css,
     /* for cursive version of Victor Mono */
 }
 
-/* WORKS FONT */
-#workskin,
-.preface * {
-  font-family: Domine, Merriweather, serif;
+/* WORKSKIN FONT */
+#workskin *:not(kbd, tt, code, var, pre, samp) {
+  font-family: Domine, Merriweather, serif, Apfel Grotezk, Figtree, Bitter;
 }
 
 /*============================================================
@@ -1620,7 +1619,14 @@ fieldset.actions li:not(:first-child) {
 }
 
 /*>========== BUTTON CONTEXTS ==========<*/
-/* credits to ZerafinaCSS*/
+/* credits to ZerafinaCSS and lfky */
+
+/* fix download menu flashing */
+.work.navigation .download {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important
+}
 
 /* chapter index and download menus */
 .javascript .work.navigation .secondary,
@@ -2571,7 +2577,7 @@ li.comment:not(:has(.edit_comment)) {
 }
 
 /* comment icon animation */
-/* credit to lfkyyy and the Hogwarts skin - https://github.com/Ifkyyy/AO3-skins */
+/* credit to lfk and the Hogwarts skin - https://github.com/Ifkyyy/AO3-skins */
 .comment img.icon,
 .comment span.icon,
 .comment div.icon>a {
